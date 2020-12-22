@@ -5,8 +5,9 @@ Framework para automatización de pruebas (front-back) con python
 behaqve un marco BDD (Behavior Driven Development)
 
 ### Documentación:
-- behave:** <https://behave.readthedocs.io/en/stable/>
-- cucumber:** <https://cucumber.io/>
+- **behave:** <https://behave.readthedocs.io/en/stable/>
+- **cucumber:** <https://cucumber.io/>
+- **selenium:** <https://www.selenium.dev/documentation/es/>
 
 ## Intalación de requerimientoas:
       pip3 install behave
