@@ -2,20 +2,20 @@
 
 ## behave_framework_test
 Framework para automatización de pruebas (front-back) con python
-behave un marco BDD (Behavior Driven Development)
+behave, un marco BDD (Behavior Driven Development)
 
 ### Documentación:
 - **behave:** <https://behave.readthedocs.io/en/stable/>
 - **cucumber:** <https://cucumber.io/>
 - **selenium:** <https://www.selenium.dev/documentation/es/>
 
-## Intalación de requerimientoas:
+## Instalación de requerimientos:
       pip3 install behave
       pip3 install behave2cucumber
       pip3 install cucumber-tag-expressions
       pip3 install behave-html-formatter
 
-## Instalación mas reciente desde repositorio behave:
+## Instalación más reciente desde repositorio behave:
       pip3 install git+https://github.com/behave/behave
       
 ## Actualización:
@@ -33,7 +33,7 @@ behave un marco BDD (Behavior Driven Development)
       features/                       # implementación completa
           everything.feature          # ficheros .feature y environment.py
           steps/steps.py              # implementación de las definiciones de steps del feature *.py
-          reports/
+          reports/                    # donde se guardarán los reportes de las preubas ejecutadas
     
 ### Creación estructura con pycharm:
 #### **Step 1 (proyecto):**
@@ -44,17 +44,17 @@ behave un marco BDD (Behavior Driven Development)
       interpreter: Python3.8
 
 #### **Step 2 (estructura):**
-- **nota:** sobre el directorio principal del proyecto creado,
+- **Nota:** sobre el directorio principal del proyecto creado,
       
       new Python Package llamado web
       
-- **nota:** repetir este proceso para el package features y dentro de el para el package steps
+- **Nota:** repetir este proceso para el package features y dentro de el para el package steps
       
       new Directory llamado reports
 
 #### **Step 3 (behave.ini):**
 - crear el fichero de configuración behave.ini (Consiste en una o secciones más nombradas(cada sección esta delimitada por []), cada una de las cuales puede contener opciones individuales con nombres y valores), en la raiz del proyecto con el siguiente contenido:
-**Nota:** opciones de configuración que se ubicarán en archivos .ini / *.cfg
+**Nota:** opciones de configuración que se ubicarán en archivos .ini / .cfg
 
       [behave]
       stderr_capture = False
@@ -69,7 +69,7 @@ behave un marco BDD (Behavior Driven Development)
       #browser = firefox
 
 #### **Step 4 (fixtures.py):**
-- crear el fichero tipo python llamado fixtures (lógica auxiliar para la ejecución de la automatización de pruebas) y agregar el siguiente contenido:
+- Crear el fichero tipo python llamado fixtures (lógica auxiliar para la ejecución de la automatización de pruebas) y agregar el siguiente contenido:
 
       from selenium import webdriver
       from web.web import Web
@@ -160,9 +160,9 @@ behave un marco BDD (Behavior Driven Development)
           web = get_web(context.config.userdata['browser'])
           context.web = web
           
-**Nota:*+ si nos fijamos estamos haciendo uso de la función get_web definida en el fichero factory.py y le estamos pasando el contenido de la variable browser declarada en el fichero behave.ini de configuración dentro de la variable browser declarada en la sección [baheve.userdata]
+**Nota:** si nos fijamos estamos haciendo uso de la función get_web definida en el fichero factory.py y le estamos pasando el contenido de la variable browser declarada en el fichero behave.ini de configuración, dentro de la variable browser, declarada en la sección [baheve.userdata]
 
-**Nota:** Environment.py (que contiene los ganchos(hooks) necesarios para la inicialización y finalización) es un archivo de entorno de Python Behave. Se puede utilizar para definir código que debe ejecutarse antes y después de que ocurran ciertos eventos durante el ciclo de automatización de la prueba de Selenium<br/>
+**Nota:** Environment.py (que contiene los ganchos(hooks) necesarios para la inicialización y finalización) es un archivo de entorno de Python Behave. Se puede utilizar para definir códig* que debe ejecutarse antes y después de que ocurran ciertos eventos durante el ciclo de automatización de la prueba de Selenium<br/>
 
 Tipos de funciones de enviroment:
 - before_step (context, step), after_step (context, step), se ejecuta antes y después de cada step
