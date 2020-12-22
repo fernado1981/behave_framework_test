@@ -1,9 +1,12 @@
+<a name="top"></a>
+
 ## behave_framework_test
 Framework para automatización de pruebas (front-back) con python
 behaqve un marco BDD (Behavior Driven Development)
 
 ### Documentación:
-[behave]: <https://behave.readthedocs.io/en/stable/>
+**behave:** <https://behave.readthedocs.io/en/stable/>
+**cucumber:** <https://cucumber.io/>
 
 ## Intalación de requerimientoas:
 pip3 install behave
@@ -28,21 +31,21 @@ pip3 install git+https://github.com/behave/behave
           steps/steps.py              # implementación de las definiciones de steps del feature *.py
           reports/
     
-## Creación estructura con pycharm:
-**Step 1 (proyecto):**
+### Creación estructura con pycharm:
+#### **Step 1 (proyecto):**
 - create a new proyect
 - location la desada por el usuario
 - new enviroment using virtualenv
 - base interpreter: /usr/bin/python3
 - interpreter: Python3.8
 
-**Step 2 (estructura):**
+#### **Step 2 (estructura):**
 - **nota:** sobre el directorio principal del proyecto creado,
 - new Python Package llamado web
 - **nota:** repetir este proceso para el package features y dentro de el para el package steps
 - new Directory llamado reports
 
-**Step 3 (behave.ini):**
+#### **Step 3 (behave.ini):**
 - crear el fichero de configuración behave.ini (Consiste en una o secciones más nombradas(cada sección esta delimitada por []), cada una de las cuales puede contener opciones individuales con nombres y valores), en la raiz del proyecto con el siguiente contenido:
 **Nota:** opciones de configuración que se ubicarán en archivos .ini / *.cfg
 
@@ -58,7 +61,7 @@ pip3 install git+https://github.com/behave/behave
       browser = chrome
       #browser = firefox
 
-**Step 4 (fixtures.py):**
+#### **Step 4 (fixtures.py):**
 - crear el fichero tipo python llamado fixtures (lógica auxiliar para la ejecución de la automatización de pruebas) y agregar el siguiente contenido:
 
       from selenium import webdriver
@@ -75,7 +78,7 @@ pip3 install git+https://github.com/behave/behave
           yield context.web
           browser.quit()
 
-**Step 5 (web/factory.py):**
+#### **Step 5 (web/factory.py):**
 - crear el fichero tipo phyton dentro de web llamado factory.py (obtendremos el webdriver en funcion del browser seleccionado), con el siguiente contenido:
 
       from selenium import webdriver
@@ -88,7 +91,7 @@ pip3 install git+https://github.com/behave/behave
           if browser == "firefox":
               return Web(webdriver.Firefox())
               
- **Step 6 (web/web.py):**
+ #### **Step 6 (web/web.py):**
  - Generamos el fichero para el comportamiento de los localizadores de la web, llamado web.py, con el siguiente contenido:
  **Nota:** este fichero ira creciendo a medida que necesitemos usar mas métodos
  
@@ -140,7 +143,7 @@ pip3 install git+https://github.com/behave/behave
             def find_by_id_displayed(self, id_value):
                 return self._web_driver_wait.until(EC.presence_of_element_located((By.ID, id_value))).is_displayed()
 
-**Step 7 (features/environment.py):**
+#### **Step 7 (features/environment.py):**
 - Creación del fichero environment.py, con el siguiente contenido:
 **Nota:** Environment.py (que contiene los ganchos(hooks) necesarios para la inicialización y finalización) es un archivo de entorno de Python Behave. Se puede utilizar para definir código que debe ejecutarse antes y después de que ocurran ciertos eventos durante el ciclo de automatización de la prueba de Selenium<br/>
 
@@ -159,13 +162,14 @@ tipos de funciones de enviroment:
 
 **Nota:*+ si nos fijamos estamos haciendo uso de la función get_web definida en el fichero factory.py y le estamos pasando el contenido de la variable browser declarada en el fichero behave.ini de configuración dentro de la variable browser declarada en la sección [baheve.userdata]
 
-**Step 8 (features/prueba.feature):**
+#### **Step 8 (features/prueba.feature):**
 - creación del fichero *.feature, el cual contendra el gerking a ejecutar
 
-cucumber: <https://cucumber.io/>
+**cucumber_gerking:** <https://cucumber.io/docs/gherkin/reference/>
 
-**Step 9 (features/steps/prueba_steps.py):**
+#### **Step 9 (features/steps/prueba_steps.py):**
 - creación de los ficheros de steps para los gerking y los hooks necesarios
 
-cucumber: <https://cucumber.io/docs/cucumber/step-definitions/#:~:text=A%20Step%20Definition%20is%20a,matching%20step%20definition%20to%20execute.>
+**cucumber_step:** <https://cucumber.io/docs/cucumber/step-definitions/#:~:text=A%20Step%20Definition%20is%20a,matching%20step%20definition%20to%20execute.>
 
+[Subir](#top)
