@@ -2,7 +2,7 @@
 
 ## behave_framework_test
 Framework para automatización de pruebas (front-back) con python
-behaqve un marco BDD (Behavior Driven Development)
+behave un marco BDD (Behavior Driven Development)
 
 ### Documentación:
 - **behave:** <https://behave.readthedocs.io/en/stable/>
@@ -11,13 +11,16 @@ behaqve un marco BDD (Behavior Driven Development)
 
 ## Intalación de requerimientoas:
       pip3 install behave
-      pip3 install -U behave
       pip3 install behave2cucumber
       pip3 install cucumber-tag-expressions
       pip3 install behave-html-formatter
 
 ## Instalación mas reciente desde repositorio behave:
       pip3 install git+https://github.com/behave/behave
+      
+## Actualización:
+
+      pip3 install -U behave
 
 ## REQUISITOS MÍNIMOS:
 **Nota:** mantener una estructura de proyecto uniforme ayuda a mantener el proyecto.
