@@ -68,6 +68,8 @@ behave, un marco BDD (Behavior Driven Development)
       browser = chrome
       #browser = firefox
 
+**Nota:** En caso de querer utilizar firefox, deberemos comentar tanto Enviroment como userdata el browser de chrome y descomentar el de firefox
+
 #### **Step 4 (fixtures.py):**
 - Crear el fichero tipo python llamado fixtures (lógica auxiliar para la ejecución de la automatización de pruebas) y agregar el siguiente contenido:
 
@@ -84,6 +86,8 @@ behave, un marco BDD (Behavior Driven Development)
           context.web = web
           yield context.web
           browser.quit()
+
+**Nota:** En caso de querer usar firefox, deberemos comentar la instancia a webdriver.Chrome(), y descomentar la de webdriver.firefox()
 
 #### **Step 5 (web/factory.py):**
 - crear el fichero tipo phyton dentro de web llamado factory.py (obtendremos el webdriver en funcion del browser seleccionado), con el siguiente contenido:
