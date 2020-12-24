@@ -38,7 +38,7 @@ behave, un marco BDD (Behavior Driven Development)
 ### Creación estructura con pycharm:
 #### **Step 1 (proyecto):**
       create a new proyect
-      location la desada por el usuario
+      location (la desada por el usuario)
       new enviroment using virtualenv
       base interpreter: /usr/bin/python3
       interpreter: Python3.8
