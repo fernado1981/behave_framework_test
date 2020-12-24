@@ -1,8 +1,8 @@
 <a name="top"></a>
 
 ## behave_framework_test
-Framework para automatización de pruebas (front-back) con python
-behave, un marco BDD (Behavior Driven Development)
+Framework para automatización de pruebas BDD (Behavior Driven Development) para (front-back) con python
+behave, con una gran documentación que podréis encontrar en su web oficial, la cual dejo mencionada en el siguiente apartado.
 
 ### Documentación:
 - **behave:** <https://behave.readthedocs.io/en/stable/>
