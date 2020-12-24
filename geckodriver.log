@@ -1,0 +1,24 @@
+1608802615051	geckodriver	INFO	Listening on 127.0.0.1:49449
+1608802615858	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/3v/1sl8t8xd1ql2jp4p40d37hyw0000gn/T/rust_mozprofilerFHNRl"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1608802622622	Marionette	INFO	Listening on port 49460
+1608802740296	geckodriver	INFO	Listening on 127.0.0.1:49506
+1608802741309	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/3v/1sl8t8xd1ql2jp4p40d37hyw0000gn/T/rust_mozprofileSJ4uQ6"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1608802743920	Marionette	INFO	Listening on port 49517
+1608802743962	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://blazedemo.com/assets/bootstrap.min.js, line 7: TypeError: a is not a function
+JavaScript error: https://blazedemo.com/assets/bootstrap-table.js, line 1126: ReferenceError: jQuery is not defined
+JavaScript error: https://blazedemo.com/assets/bootstrap.min.js, line 7: TypeError: a is not a function
+JavaScript error: https://blazedemo.com/assets/bootstrap-table.js, line 1126: ReferenceError: jQuery is not defined
+1608802752431	Marionette	INFO	Stopped listening on port 49517
+1608803101428	geckodriver	INFO	Listening on 127.0.0.1:49669
+1608803102454	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/3v/1sl8t8xd1ql2jp4p40d37hyw0000gn/T/rust_mozprofile5NXVvZ"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1608803105069	Marionette	INFO	Listening on port 49676
+1608803105095	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://blazedemo.com/assets/bootstrap.min.js, line 7: TypeError: a is not a function
+JavaScript error: https://blazedemo.com/assets/bootstrap-table.js, line 1126: ReferenceError: jQuery is not defined
+JavaScript error: https://blazedemo.com/assets/bootstrap.min.js, line 7: TypeError: a is not a function
+JavaScript error: https://blazedemo.com/assets/bootstrap-table.js, line 1126: ReferenceError: jQuery is not defined
+1608803120367	Marionette	INFO	Stopped listening on port 49676
