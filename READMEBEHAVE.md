@@ -3,11 +3,14 @@
 
 # BEHAVE_CUCUMBER:
 ## Documentación:
-#### 1.- Implementamos el siguiente ejemplo dentreo del fichero *.feature:
+
 **FUNCIONAMIENTO ARCHIVOS .feature:**
 - 'Given' que ponemos el sistema en un estado conocido antes de que el usuario (o sistema externo) comience a interactuar con el sistema (en los pasos Cuándo). Evite hablar de la interacción del usuario en situaciones dadas.
 - 'When' nos tomamos acciones clave que el usuario (o sistema externo) lleva a cabo. Esta es la interacción con su sistema que debería (o tal vez no debería) hacer que algún estado cambie.
 - 'Then' nos observamos los resultados.
+
+## EJEMPLO:
+#### 1.- Implementamos el siguiente ejemplo dentro del fichero *.feature:
     vi tutorial.feature
 **NOTA:** nos pedirá que instalemos el plugin de cucumber
 
