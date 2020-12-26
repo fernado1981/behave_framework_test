@@ -14,6 +14,8 @@ behave, con una gran documentación que podréis encontrar en su web oficial, la
       pip3 install behave2cucumber
       pip3 install cucumber-tag-expressions
       pip3 install behave-html-formatter
+      pip3 install allure-behave
+      npm install -g allure-commandline --save-dev
 
 ## Instalación más reciente desde repositorio behave:
       pip3 install git+https://github.com/behave/behave
@@ -47,11 +49,14 @@ behave, con una gran documentación que podréis encontrar en su web oficial, la
 - **Nota:** sobre el directorio principal del proyecto creado,
       
       new Python Package llamado web
-      
-- **Nota:** repetir este proceso para el package features y dentro de el para el package steps
-      
-      new Directory llamado reports
+      new package llamado reports
+      new package llamado page_object
+      new package llamado features
 
+- **Nota:** sobre el directorio features:
+
+      new package llamado steps
+      
 #### **Step 3 (behave.ini):**
 - crear el fichero de configuración behave.ini (Consiste en una o secciones más nombradas(cada sección esta delimitada por []), cada una de las cuales puede contener opciones individuales con nombres y valores), en la raiz del proyecto con el siguiente contenido:
 **Nota:** opciones de configuración que se ubicarán en archivos .ini / .cfg
