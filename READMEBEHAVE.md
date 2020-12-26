@@ -43,38 +43,39 @@
       def step_impl(context):
         assert context.failed is False
 
-#### 5.- Ejecute los escenarios con report:
+## EJECUCIÓN:
+#### 1.- Ejecute los escenarios con report:
     behave -f html -o reports/report.html
 
-#### 6.- Ejecute los escenarios con allure reports:
+#### 2.- Ejecute los escenarios con allure reports:
     behave -f allure_behave.formatter:AllureFormatter -o reports/allure/results ./features
     allure serve reports/allure/results
 
-#### 7.- Ejecute los escenarios:
+#### 3.- Ejecute los escenarios:
     behave
     
-#### 8.- Ejecución por nombre de escenario:
+#### 4.- Ejecución por nombre de escenario:
 **sintax:** behave -n 'nombre del escenario'
    
     behave -n 'run a simple test'
 
-#### 9.- Ejecute por tag:
+#### 5.- Ejecute por tag:
 **Nota:** para ello deberemos añadir el tag justo encima del escenario
 **sintax:** behave -t 'nombre del @tag'
 
     behave -t '@slow_tag_name'
 
-#### 10.- Ejecutar sólo un .feature:
+#### 6.- Ejecutar sólo un .feature:
 **sintax:** behave -i nombre del .feature
 
     behave -i tutorial.feature
 
-#### 11.- Excluyendo .feature:
+#### 7.- Excluyendo .feature:
 **Sintax:** behave -e file_name
 
     behave -e tutorial.feature
    
-#### 12.- Help:
+#### 8.- Help:
     behave -help
 
 [Subir](#top)
