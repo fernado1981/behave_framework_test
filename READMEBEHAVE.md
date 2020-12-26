@@ -1,41 +1,13 @@
 <a name='top'></a>
-[Principal](../README.md)<br/>
+[Principal](README.md)<br/>
 
-# BEHAVE:
+# BEHAVE_CUCUMBER:
 ## Documentación:
-
-https://behave.readthedocs.io/en/stable/
-
-#### 1.- INTALACION:
-    pip3 install behave
-    pip3 install -U behave
-    pip install behave-html-formatter
-
-#### 2.- Versión mas reciente desde el repositorio behave:
-    pip install git+https://github.com/behave/behave
-
-#### 1.- REQUISITOS MÍNIMOS:
-Nota: mantener una estructura de proyecto uniforme ayuda a mantener el proyecto.<br>
-La implementación completa debe estar presente en el directorio 'features'.<br>
-Los archivos de caracteristicas (* .feature) deben estar presentes en el directorio 'features', incluido 'environment.py' (que contiene los ganchos necesarios para la inicialización y finalización).<br>
-La implementación de las definiciones de pasos de las caracteristicas debe estar presente en el directorio features / steps.<br>
-Las opciones de configuración que se ubicarán en archivos .ini / .cfg.
-Los reportes los pondremos en un directorio aparte reports
-
-        features/
-        features/everything.feature
-        features/steps/
-        features/steps/steps.py
-        reports
-
-#### 2.- Creamos un directorio llamado features
-    mkdir features
-
-#### 3.- Creamos un fichero lamado tutorial.feature:
-    cd features
-    touch feature
-
-#### 4.- Implementamos el siguiente ejemplo dentreo del fichero *.feature:
+#### 1.- Implementamos el siguiente ejemplo dentreo del fichero *.feature:
+**FUNCIONAMIENTO ARCHIVOS .feature:**
+- 'Given' que ponemos el sistema en un estado conocido antes de que el usuario (o sistema externo) comience a interactuar con el sistema (en los pasos Cuándo). Evite hablar de la interacción del usuario en situaciones dadas.
+- 'When' nos tomamos acciones clave que el usuario (o sistema externo) lleva a cabo. Esta es la interacción con su sistema que debería (o tal vez no debería) hacer que algún estado cambie.
+- 'Then' nos observamos los resultados.
     vi tutorial.feature
 **NOTA:** nos pedirá que instalemos el plugin de cucumber
 
@@ -46,15 +18,15 @@ Los reportes los pondremos en un directorio aparte reports
      When we implement a test
      Then behave will test it for us!
       
-#### 5.- Creamos el directorio steps:
+#### 2.- Creamos el directorio steps:
     cd features
     mkdir steps
 
-#### 6.- Creamos el fichero tutorial.py:
+#### 3.- Creamos el fichero tutorial.py:
     cd features/steps
     touch tutorial.py
 
-#### 7.- Implementamos los steps del feature:
+#### 4.- Implementamos los steps del feature:
     vi tutorial.py
 
       from behave import *
@@ -71,54 +43,38 @@ Los reportes los pondremos en un directorio aparte reports
       def step_impl(context):
         assert context.failed is False
 
-#### 8.- Implementar directorio para report:
-    mkdir reports
-
-#### 9.- Implementar behave.ini:
-opciones de configuración que se ubicarán en archivos .ini o .cfg.
-
-    # -- FILE: behave.ini
-    # Define ALIAS for HtmlFormatter.
-    [behave.formatters]
-    html = behave_html_formatter:HTMLFormatter
-
-#### 9.- Ejecute los escenarios con report:
+#### 5.- Ejecute los escenarios con report:
     behave -f html -o reports/report.html
 
-#### 10.- Ejecute los escenarios con allure reports:
+#### 6.- Ejecute los escenarios con allure reports:
     behave -f allure_behave.formatter:AllureFormatter -o reports/allure/results ./features
     allure serve reports/allure/results
 
-#### 10.- Ejecute los escenarios:
+#### 7.- Ejecute los escenarios:
     behave
     
-#### 11.- Ejecución por nombre de escenario:
+#### 8.- Ejecución por nombre de escenario:
 **sintax:** behave -n 'nombre del escenario'
    
     behave -n 'run a simple test'
 
-#### 12.- Ejecute por tag:
+#### 9.- Ejecute por tag:
 **Nota:** para ello deberemos añadir el tag justo encima del escenario
 **sintax:** behave -t 'nombre del @tag'
 
     behave -t '@slow_tag_name'
 
-#### 13.- Ejecutar sólo un .feature:
+#### 10.- Ejecutar sólo un .feature:
 **sintax:** behave -i nombre del .feature
 
     behave -i tutorial.feature
 
-#### 14.- Excluyendo .feature:
+#### 11.- Excluyendo .feature:
 **Sintax:** behave -e file_name
 
     behave -e tutorial.feature
    
-#### 15.- Help:
+#### 12.- Help:
     behave -help
-
-#### 1.- FUNCIONAMIENTO ARCHIVOS .feature:
-- 'Given' que ponemos el sistema en un estado conocido antes de que el usuario (o sistema externo) comience a interactuar con el sistema (en los pasos Cuándo). Evite hablar de la interacción del usuario en situaciones dadas.
-- 'When' nos tomamos acciones clave que el usuario (o sistema externo) lleva a cabo. Esta es la interacción con su sistema que debería (o tal vez no debería) hacer que algún estado cambie.
-- 'Then' nos observamos los resultados.
 
 [Subir](#top)
