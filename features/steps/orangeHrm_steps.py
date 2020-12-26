@@ -1,7 +1,7 @@
 from behave import when, then
 
-from page_objects.home_orangeHrm import home
-from page_objects.dashboard_orangeHrm import dashboard_orangeHrm
+from page_objects.orangeHrm.home_orangeHrm import home
+from page_objects.orangeHrm.dashboard_orangeHrm import dashboard_orangeHrm
 
 
 @when('the user verify the title page "{titlePage}"')

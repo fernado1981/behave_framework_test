@@ -1,6 +1,6 @@
 from behave import given, when
 
-from page_objects.home_orangeHrm import home
+from page_objects.orangeHrm.home_orangeHrm import home
 
 
 @given('the user is on the search page "{page}"')
