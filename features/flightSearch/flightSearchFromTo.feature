@@ -1,4 +1,4 @@
-Feature: The user can book available flights
+Feature: Available flights
 
   @test
   Scenario: The user can find a flight from Philadelphia to New York

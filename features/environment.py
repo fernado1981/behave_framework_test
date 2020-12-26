@@ -1,8 +1,6 @@
 from behave.fixture import use_fixture_by_tag
-from allure_behave.hooks import allure_report
-from web.factory import get_web
 
-allure_report("%allure_result_folder%")
+from web.factory import get_web
 
 
 def before_scenario(context, test):
