@@ -1,10 +1,7 @@
-class search_flight:
-    locators = {
-        "xpath_from": "//select[@name='fromPort']/option[text()='{}']",
-        "xpath_to": "//select[@name='toPort']/option[text()='{}']",
-        "xpath_submit": "//input[@type='submit']",
-        "xpath_count_flights": "//table/tbody/tr"
-    }
+from page_objects.flightsearch.locators_flightsearch import locators_flightsearch
+
+
+class search_flight(locators_flightsearch):
 
     def __init__(self):
         self.fromflight = self.locators["xpath_from"]
