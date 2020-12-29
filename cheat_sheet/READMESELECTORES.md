@@ -1,11 +1,6 @@
-<a name='top'></a>
-
-[Principal](README.md)<br/>
-
 ## LOCALIZADORES:
    
     - By.id("id")
-    - By.class_name("class_name")
     - By.name("name")
     - By.linkText("linktext")
     - By.partialLinkText("partialLinkTexdt")
@@ -78,5 +73,3 @@ Diferencias xpath vs cssSelector:
 
     Xpath: //input[@placeholder=‘valor’]
     Css: input[placeholder=‘valor’]
-
-[Subir](#top)
