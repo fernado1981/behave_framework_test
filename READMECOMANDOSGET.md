@@ -1,16 +1,19 @@
+# Comandos comunes:
+Los citados en esta sección no significa que seán los unicos, pero si los más itilizados
+
 ## Comandos Get:
 Ayudan a buscar informacion importante sobre la página/elemento. estos son algunos de los más importantes:  
 - **getTitle**, no necesita parámetros, este obtiene el título de la página.
 
-    driver.title
+        driver.title
 
 - **getPageSource**, no necesita parámetros, devuelve el código de la página como valor de cadena.
     
-    driver.page_source
+         driver.page_source
 
 - **getCurrentUrl**, No necesita parámetros, obtiene la url actual del navegador
 
-    driver.current_url
+        driver.current_url
     
 - **getText()**, recupera el texto interior del elemento que se especifique
 
@@ -18,25 +21,48 @@ Ayudan a buscar informacion importante sobre la página/elemento. estos son algu
 permiten navegar entre las diferentes páginas Web.
 - **get()**, abre una nueva ventana del exploradory busca la página que se especifique dentro de los parentesis, el parámetro debe ser un objeto string.
 
-    driver.get("https://selenium.dev")
+       driver.get("https://selenium.dev")
     
 - **Retroceder**
 
-    driver.back()
+        driver.back()
 
 - **Avanzar**
 
-    driver.forward()
+        driver.forward()
 
 - **Actualizar**
 
-    driver.refresh()
+        driver.refresh()
+    
+## Switch_to:
+se utiliza para cambiar entre diferentes elementos de la ventana, que de otra manera serían imposibles de acceder
+- **cambiar al elemento activo:**
+
+        driver.switch_to.active_element
+        
+- **cambiar al alert:**
+
+        driver.switch_to.alert
+
+- **cambiar al contenido por defecto:**
+
+        driver.switch_to.default_content
+        
+- **cambiar al frame:**
+
+        driver.switch_to.frame
+
+- **cambiar a la ventana:**
+
+        driver.switch_to.window
     
 ## Cerrar y salir del navegador:
-- close
+- **close:**
 
-    driver.close()
+        driver.close()
 
-- quit()
+- **quit:**
 
-    driver.quit()
+        driver.quit()
+    
