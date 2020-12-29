@@ -11,7 +11,7 @@ Allure cuenta con un amplio espectro de posibilidades.
 
 ![overview](Overview.png) 
 
-![overview1](Overview1.png) 
+![overview1](overview1.png) 
 
 - Ejemplo suites:
 
