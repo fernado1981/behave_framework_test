@@ -1,3 +1,6 @@
+<a name='top'></a>
+[Principal](README.md) 
+
 ## LOCALIZADORES:
    
     - By.id("id")
@@ -73,3 +76,5 @@ Diferencias xpath vs cssSelector:
 
     Xpath: //input[@placeholder=‘valor’]
     Css: input[placeholder=‘valor’]
+    
+[Subir](#top)
