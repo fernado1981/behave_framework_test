@@ -5,6 +5,7 @@
 ## LOCALIZADORES:
    
     - By.id("id")
+    - By.class_name("class_name")
     - By.name("name")
     - By.linkText("linktext")
     - By.partialLinkText("partialLinkTexdt")
