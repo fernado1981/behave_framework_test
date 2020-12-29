@@ -9,6 +9,7 @@ behave, con una gran documentación que podréis encontrar en su web oficial, la
 - **behave:** <https://behave.readthedocs.io/en/stable/>
 - **cucumber:** <https://cucumber.io/>
 - **selenium:** <https://www.selenium.dev/documentation/es/>
+- **behave-allure:** <https://pypi.org/project/allure-behave/>
 
 ## Instalación de requerimientos:
       pip3 install behave
