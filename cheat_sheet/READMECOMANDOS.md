@@ -59,6 +59,25 @@ se utiliza para cambiar entre diferentes elementos de la ventana, que de otra ma
 - **cambiar a la ventana:**
 
         driver.switch_to.window
+        
+## click:
+se utiliza para simular click sobre un elemento.
+
+**Ejemplo:**
+
+        python_button = driver.find_elements_by_xpath("//input[@name='lang' and @value='Python']")[0]
+        python_button.click()
+        
+## send_key
+se utiliza para escribir sobre elementos tipo textarea, input, ...
+
+        text_area = driver.find_element_by_id('textarea')
+        text_area.send_keys("print('Hello World')")
+        
+simular enter o las flechas:
+        
+        element.send_keys(" and some", Keys.ENTER)
+        element.send_keys(" and some", Keys.ARROW_DOWN)
     
 ## Cerrar y salir del navegador:
 - **close:**
