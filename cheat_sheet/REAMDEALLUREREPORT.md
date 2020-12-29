@@ -9,24 +9,24 @@ Allure cuenta con un amplio espectro de posibilidades.
 
 - Ejemplo Página de resumen:
 
-![overview](cheat_sheet/Overview.png) 
+![overview](Overview.png) 
 
-![overview1](cheat_sheet/Overview1.png) 
+![overview1](Overview1.png) 
 
 - Ejemplo suites:
 
-![suite](cheat_sheet/suites.png) 
+![suite](suites.png) 
 
 - Ejemplo línea de tiempo:
 
-![timeline](cheat_sheet/timeline.png) 
+![timeline](timeline.png) 
 
 - Ejemplo gráficos:
 
-![graph](cheat_sheet/graphs.png) 
+![graph](graphs.png) 
 
 - Ejemplo comportamiento:
 
-![behaviors](cheat_sheet/behaviors.png) 
+![behaviors](behaviors.png) 
 
 [Subir](#top)
