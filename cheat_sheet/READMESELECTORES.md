@@ -1,5 +1,5 @@
 <a name='top'></a>
-[Principal](cheat_sheet/README.md) 
+[Principal](../README.md) 
 
 ## LOCALIZADORES:
    
