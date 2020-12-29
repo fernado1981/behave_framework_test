@@ -17,6 +17,7 @@ behave, con una gran documentación que podréis encontrar en su web oficial, la
       pip3 install cucumber-tag-expressions
       pip3 install behave-html-formatter
       pip3 install allure-behave
+      pip3 install behave-jenkins
       npm install -g allure-commandline --save-dev
 
 ## Instalación más reciente desde repositorio behave:
