@@ -1,6 +1,10 @@
 <a name='top'></a>
 [Principal](../README.md) 
 
+## Herramienta importante:
+
+**selectorshub:** <https://selectorshub.com/>
+
 ## LOCALIZADORES:
    
     - By.id("id")
