@@ -1,5 +1,5 @@
 <a name='top'></a>
-[Principal](README.md)<br/>
+[Principal](../README.md)<br/>
 
 # BEHAVE_CUCUMBER:
 ## Documentación:
