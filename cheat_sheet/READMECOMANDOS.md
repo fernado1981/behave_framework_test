@@ -1,5 +1,5 @@
 <a name='top'></a>
-[Principal](README.md) 
+[Principal](../README.md) 
 
 # Comandos comunes:
 Los citados en esta sección no significa que seán los unicos, pero si los más itilizados
