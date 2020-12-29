@@ -10,6 +10,7 @@ Allure cuenta con un amplio espectro de posibilidades.
 - Ejemplo Página de resumen:
 
 ![overview](cheat_sheet/Overview.png) 
+
 ![overview1](cheat_sheet/Overview1.png) 
 
 - Ejemplo suites:
