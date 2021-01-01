@@ -1,15 +1,15 @@
-from page_objects.orangeHrm.locators_orangeHrm import homeorangeHrm
+from page_objects.orangehrm.locators_orange_hrm import LocatorsHomeOrangeHrm
 
 
-class home(homeorangeHrm):
+class HomeOrangeHrm(LocatorsHomeOrangeHrm):
 
     def __init__(self):
         self.locator = self.locators
 
     def simple_login_home(self, context, user, pwd):
-        userName = context.web.find_by_id_displayed(self.locators["id_username"])
+        user_name = context.web.find_by_id_displayed(self.locators["id_username"])
         password = context.web.find_by_id_displayed(self.locators["id_password"])
-        if userName is True and password is True:
+        if user_name is True and password is True:
             context.web.find_by_id(self.locators["id_username"]).send_keys(user)
             context.web.find_by_id(self.locators["id_password"]).send_keys(pwd)
             return True
@@ -19,9 +19,9 @@ class home(homeorangeHrm):
         for row in context.table:
             context.temp_name = row['name']
             context.temp_password = row['pwd']
-            userName = context.web.find_by_id_displayed(self.locators["id_username"])
+            user_name = context.web.find_by_id_displayed(self.locators["id_username"])
             password = context.web.find_by_id_displayed(self.locators["id_password"])
-            if userName is True and password is True:
+            if user_name is True and password is True:
                 context.web.find_by_id(self.locators["id_username"]).send_keys(context.temp_name)
                 context.web.find_by_id(self.locators["id_password"]).send_keys(context.temp_password)
                 return True
@@ -30,9 +30,9 @@ class home(homeorangeHrm):
     def example_login_home(self, context, user, pwd):
         context.temp_name = user
         context.temp_password = pwd
-        userName = context.web.find_by_id_displayed(self.locators["id_username"])
+        user_name = context.web.find_by_id_displayed(self.locators["id_username"])
         password = context.web.find_by_id_displayed(self.locators["id_password"])
-        if userName is True and password is True:
+        if user_name is True and password is True:
             context.web.find_by_id(self.locators["id_username"]).send_keys(context.temp_name)
             context.web.find_by_id(self.locators["id_password"]).send_keys(context.temp_password)
             return True

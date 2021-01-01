@@ -1,4 +1,4 @@
-class homeorangeHrm:
+class LocatorsHomeOrangeHrm:
     locators = {
         "id_username": "txtUsername",
         "id_password": "txtPassword",

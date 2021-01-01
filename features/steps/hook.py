@@ -1,6 +1,6 @@
 from behave import given, when
 
-from page_objects.orangeHrm.home_orangeHrm import home
+from page_objects.orangehrm.home_orange_hrm import HomeOrangeHrm
 
 
 @given('the user is on the search page "{page}"')
@@ -12,6 +12,6 @@ def user_on_search_page(context, page):
 
 
 @when('Click on login button')
-def submitLoginForm(context):
-    submit = home()
+def submit_login_form(context):
+    submit = HomeOrangeHrm()
     submit.submit_bottom(context)

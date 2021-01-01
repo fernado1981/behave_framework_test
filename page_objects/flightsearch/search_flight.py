@@ -1,7 +1,7 @@
-from page_objects.flightsearch.locators_flightsearch import locators_flightsearch
+from page_objects.flightsearch.locators_flight_search import LocatorsFlightSearch
 
 
-class search_flight(locators_flightsearch):
+class SearchFlight(LocatorsFlightSearch):
 
     def __init__(self):
         self.locators = self.locators

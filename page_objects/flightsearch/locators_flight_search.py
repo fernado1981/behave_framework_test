@@ -1,4 +1,4 @@
-class locators_flightsearch:
+class LocatorsFlightSearch:
     locators = {
         "xpath_from": "//select[@name='fromPort']/option[text()='{}']",
         "xpath_to": "//select[@name='toPort']/option[text()='{}']",

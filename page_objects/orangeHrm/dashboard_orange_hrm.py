@@ -1,7 +1,7 @@
-from page_objects.orangeHrm.locators_orangeHrm import homeorangeHrm
+from page_objects.orangehrm.locators_orange_hrm import LocatorsHomeOrangeHrm
 
 
-class dashboard_orangeHrm(homeorangeHrm):
+class DashboardOrangeHrm(LocatorsHomeOrangeHrm):
 
     def __init__(self):
         self.locators = self.locators_dashboard
