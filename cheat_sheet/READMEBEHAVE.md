@@ -77,7 +77,17 @@
 **Sintax:** behave -e file_name
 
     behave -e tutorial.feature
-   
+    
+#### 8.- Pylint:
+**validador de código:**
+validar todos los archivos *.py
+
+    pylint *
+
+validar un fichero único [filename].py
+
+    pylint filename.py
+
 #### 8.- Help:
     behave -help
 
