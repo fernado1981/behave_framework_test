@@ -3,7 +3,7 @@
 # Delete any previous report files
 rm -f reports/allure/results/*.json
 
-# Run Every tuto
+# Run Every feature
 for folder in features/orange_hrm/orange*; do
 	behave $folder -f json.pretty -o reports/allure/results/$folder.json || true;
 done
