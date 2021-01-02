@@ -11,6 +11,6 @@ done
 cp -R reports/allure/results/features/orange_hrm/orange*.json reports/allure
 
 # Convert every report to cucumber format for further jenkins report
-for f in reports/allure/results/* ; do
+for f in reports/allure/results/features/orange_hrm/* ; do
 	python convert2cucumber.py $f
 done
