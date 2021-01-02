@@ -1,6 +1,15 @@
 <a name='top'></a>
 [Principal](../README.md) 
 
+# configurar virtualenv:
+ pip3 install virtualenv 
+ 
+export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/local/bin/python3
+export PATH=$PATH:/Library/Frameworks/Python3.framework/Versions/3.7/lib/site-packages
+
+ln -s /Library/Frameworks/Python3.framework/Versions/3.7/bin/virtualenv /usr/local/bin/virtualenv
+
 ## Configuración básica jenkins:
 **Nota:** Toda esta configuración puede ser ampliada a medida que se requiera en el proyecto
 
