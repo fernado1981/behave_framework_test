@@ -8,7 +8,7 @@ for folder in features/orange_hrm/orange*; do
 	behave $folder -f json.pretty -o reports/allure/results/$folder.json || true;
 done
 
-cp -R reports/allure/results/*.json reports/allure
+cp -R reports/allure/results/features/orange_hrm/orange*.json reports/allure
 
 # Convert every report to cucumber format for further jenkins report
 for f in reports/allure/results/* ; do
