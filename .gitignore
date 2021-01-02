@@ -1,4 +1,4 @@
 %allure_result_folder%
 venv
 .idea
-reports/allure
+reports/allure-results
