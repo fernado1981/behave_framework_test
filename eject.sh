@@ -9,6 +9,6 @@ for folder in features/orange_hrm/orange*; do
 done
 
 # Convert every report to cucumber format for further jenkins report
-for f in reports/allure/results//* ; do
+for f in reports/allure/results/* ; do
 	python convert2cucumber.py $f
 done
