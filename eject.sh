@@ -5,8 +5,8 @@ rm -f reports/allure-results/*.json
 
 # Run Every tuto
 for folder in features/orange_hrm/*; do
-  behave -f allure_behave.formatter:AllureFormatter -o reports/allure-results ./features
-#	behave $folder -f json.pretty -o reports/allure-results/$folder.json || true;
+  #behave -f allure_behave.formatter:AllureFormatter -o reports/allure-results ./features
+  behave $folder -f json.pretty -o reports/allure-results/$folder.json || true;
 done
 
 # Convert every report to cucumber format for further jenkins report
