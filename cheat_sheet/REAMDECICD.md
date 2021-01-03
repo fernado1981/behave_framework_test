@@ -25,7 +25,7 @@
 4. Build -> Execvute shell (Command)
 
         #!/bin/bash 
-        . [ruta al bin/activate] && pip3 install -r requirements.txt && pip3 install webdrivermanager
+        . [ruta al bin/activate] && pip3 install -r requirements.txt && pip3 install allure-behave && pip3 install webdrivermanager
         . /eject.sh
 5. Post-build Actions
     * Allure Report
@@ -40,37 +40,14 @@
         
 # Configuración file eject.sh:
 * Eliminará los reportes existentes cada vez que se ejecutan las pruebas.
-* Recorrerá los ficheros don de están ubicados los .features y ejecutara behave, obteniendo los .json en el directorio reports/allure/results/
-* ejecutara el fichero convert2cucumber.py para la generación del reporte cucumber en jenkins
+* Ejecutará las pruebas con behave, obteniendo los .json en formato para allure-behave
     
         #!/bin/bash
         
         # Delete any previous report files
         rm -f reports/allure/results/*.json
         
-        # Run Every feature
-        for folder in features/orange_hrm/orange*; do
-            behave $folder -f json.pretty -o reports/allure/results/$folder.json || true;
-        done
-        
-        # Convert every report to cucumber format for further jenkins report
-        for f in reports/allure/results/* ; do
-            python convert2cucumber.py $f
-        done
-
-# Creacion del fichero convert2cucumber.py
-
-    import json
-    import behave2cucumber
-    import sys
-    
-    fPath = str(sys.argv[1])
-    cucumber_json = None
-    with open(fPath) as behave_json:
-        cucumber_json = behave2cucumber.convert(json.load(behave_json))
-    
-    with open(fPath, "w") as of:
-        json.dump(cucumber_json, of)
+        behave -f allure_behave.formatter:AllureFormatter -o reports/allure-results ./features
         
 # Creamos el directorio web/drivers
 * En este directorio alojaremos los drivers necesarios (firefox, chrome, ...)
