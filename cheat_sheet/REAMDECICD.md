@@ -11,11 +11,11 @@
          virtualenv virtualenv
      
 ## Configuración básica jenkins:
-# Añadir plugins:
-* ShiningPanda plugin -> <https://plugins.jenkins.io/shiningpanda/>
-* Allure -> <https://plugins.jenkins.io/allure-jenkins-plugin/>
+#### Añadir plugins:
+* ShiningPanda plugin: <https://plugins.jenkins.io/shiningpanda/>
+* Allure: <https://plugins.jenkins.io/allure-jenkins-plugin/>
 
-# Crear proyecto Freestyle: 
+#### Crear proyecto Freestyle: 
 **Nota:** Toda esta configuración puede ser ampliada a medida que se requiera en el proyecto.
 
 1. New Item
