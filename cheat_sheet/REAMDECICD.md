@@ -2,14 +2,14 @@
 [Principal](../README.md) 
 
 # configurar virtualenv:
- pip3 install virtualenv 
+**DOC:** https://dont-be-afraid-to-commit.readthedocs.io/en/latest/virtualenv.html
+ * pip3 install virtualenv
+ * virtualenv --version
+ * pip3 show virtualenv
  
-export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:/usr/local/bin/python3
-export PATH=$PATH:/Library/Frameworks/Python3.framework/Versions/3.7/lib/site-packages
-
-ln -s /Library/Frameworks/Python3.framework/Versions/3.7/bin/virtualenv /usr/local/bin/virtualenv
-
+         cd /usr/local/bin
+         virtualenv virtualenv
+     
 ## Configuración básica jenkins:
 **Nota:** Toda esta configuración puede ser ampliada a medida que se requiera en el proyecto
 
@@ -25,7 +25,7 @@ ln -s /Library/Frameworks/Python3.framework/Versions/3.7/bin/virtualenv /usr/loc
 4. Build -> Execvute shell (Command)
 
         #!/bin/bash 
-        . venv/bin/activate && pip3 install -r requirements.txt && pip3 install webdrivermanager
+        . [ruta al bin/activate] && pip3 install -r requirements.txt && pip3 install webdrivermanager
         . /eject.sh
 5. Post-build Actions
     * Allure Report
