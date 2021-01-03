@@ -41,7 +41,9 @@ behave, con una gran documentación que podréis encontrar en su web oficial, la
       features/                       # implementación completa
           everything.feature          # ficheros .feature y environment.py
           steps/steps.py              # implementación de las definiciones de steps del feature *.py
-          reports/                    # donde se guardarán los reportes de las preubas ejecutadas
+      page_object/                    # implementaciones por cada página de la web
+      reports/                        # donde se guardarán los reportes de las preubas ejecutadas
+      web/                            # funciones principales para el manejo de webdriver
     
 ### Creación estructura con pycharm:
 #### **Step 1 (proyecto):**
@@ -109,9 +111,11 @@ behave, con una gran documentación que podréis encontrar en su web oficial, la
 
       def get_web(browser):
           if browser == "chrome":
-              return Web(webdriver.Chrome())
+              #return Web(webdriver.Chrome())
+              return Web(webdriver.Chrome('web/drivers/chromedriver'))
           if browser == "firefox":
-              return Web(webdriver.Firefox())
+              #return Web(webdriver.Firefox())
+              return Web(webdriver.Firefox('web/drivers/geckodriver'))
               
  #### **Step 6 (web/web.py):**
  - Generamos el fichero para el comportamiento de los localizadores de la web, llamado web.py, con el siguiente contenido:
@@ -171,9 +175,13 @@ behave, con una gran documentación que podréis encontrar en su web oficial, la
       from web.factory import get_web
 
 
-      def before_all(context):
+      def before_scenario(context, test):
           web = get_web(context.config.userdata['browser'])
           context.web = web
+
+
+      def after_scenario(context, test):
+          context.web.close()
           
 **Nota:** si nos fijamos estamos haciendo uso de la función get_web definida en el fichero factory.py y le estamos pasando el contenido de la variable browser declarada en el fichero behave.ini de configuración, dentro de la variable browser, declarada en la sección [baheve.userdata]
 
