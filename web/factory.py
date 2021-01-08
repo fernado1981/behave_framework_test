@@ -4,8 +4,8 @@ from web.web import Web
 
 def get_web(browser):
     if browser == "chrome":
-        return Web(webdriver.Chrome())
-        #return Web(webdriver.Chrome('web/drivers/chromedriver'))
+        #return Web(webdriver.Chrome())
+        return Web(webdriver.Chrome('web/drivers/chromedriver'))
     if browser == "firefox":
-        return Web(webdriver.Firefox())
-        #return Web(webdriver.Firefox('web/drivers/geckodriver'))
+        #return Web(webdriver.Firefox())
+        return Web(webdriver.Firefox('web/drivers/geckodriver'))
