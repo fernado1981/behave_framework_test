@@ -20,7 +20,15 @@
      Given we have behave installed
      When we implement a test
      Then behave will test it for us!
-      
+     
+**NOTA:** trabajando con REST_API:
+
+    Feature: (REST-API) Get from mock rest api a json response                  # features/demo.feature:1
+    Scenario: Fetch from a mock rest api a json response                        # features/demo.feature:3
+       Given the mock url                                                       # None
+       When we consume the endpoint                                             # None
+       Then json response is retrieved with right data and 200 as status code   # None
+       
 #### 2.- Creamos el directorio steps:
     cd features
     mkdir steps
