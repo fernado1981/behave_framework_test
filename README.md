@@ -1,5 +1,5 @@
 <a name='top'></a>
-[Utilidades](cheat_sheet/READMEBEHAVE.md) | [Selectores](cheat_sheet/READMESELECTORES.md) | [Comandos](cheat_sheet/READMECOMANDOS.md)| [Allure-reports](cheat_sheet/REAMDEALLUREREPORT.md) <br/>
+[Utilidades](cheat_sheet/READMEBEHAVE.md) | [Selectores](cheat_sheet/READMESELECTORES.md) | [Comandos](cheat_sheet/READMECOMANDOS.md) | [Allure-reports](cheat_sheet/REAMDEALLUREREPORT.md) <br/>
 [CI/CD Jenkins](cheat_sheet/REAMDECICD.md) <br/>
 
 ## behave_framework_test
