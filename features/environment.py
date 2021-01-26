@@ -1,5 +1,4 @@
-from web.factory import get_web
-
+from web_source.web_factory import get_web
 
 def before_scenario(context, test):
     web = get_web(context.config.userdata['browser'])
@@ -8,3 +7,4 @@ def before_scenario(context, test):
 
 def after_scenario(context, test):
     context.web.close()
+
