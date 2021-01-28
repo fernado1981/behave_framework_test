@@ -2,7 +2,6 @@
 [Principal](../README.md) 
 
 # Comandos comunes:
-Los citados en esta sección no significa que seán los unicos, pero si los más itilizados
 
 ## Comandos Get:
 Ayudan a buscar informacion importante sobre la página/elemento. estos son algunos de los más importantes:  
