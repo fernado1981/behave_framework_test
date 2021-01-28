@@ -62,6 +62,8 @@ Si hay mas de una vez el mismo atributo, se utiliza [num_posicion] para indicar 
     <tr>
     <td class=‘login_form’></td>
     <td class=‘login_form’></td>
+    <td class=‘login_form’></td>
+    <td class=‘login_form’></td>
     </tr>
 
 (//*[@class=‘login_form’])[2]
