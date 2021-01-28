@@ -83,4 +83,12 @@ Diferencias xpath vs cssSelector:
     Xpath: //input[@placeholder=‘valor’]
     Css: input[placeholder=‘valor’]
     
+    
+Selenium define dos métodos para identificar elementos web:
+
+* findElement: 
+comando que se utiliza para identificar de forma única un elemento web dentro de la página web.
+* findElements: 
+comando utilizado para identificar una lista de elementos web dentro de la página web.
+    
 [Subir](#top)
