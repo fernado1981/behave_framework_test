@@ -9,21 +9,15 @@ Allure cuenta con un amplio espectro de posibilidades.
 
 - Ejemplo Página de resumen:
 
-![overview](Overview.png) 
-
-![overview1](overview1.png) 
+![graph](graphs.png) 
 
 - Ejemplo suites:
 
 ![suite](suites.png) 
 
-- Ejemplo línea de tiempo:
-
-![timeline](timeline.png) 
-
 - Ejemplo gráficos:
 
-![graph](graphs.png) 
+![graph](graphs1.png)
 
 - Ejemplo comportamiento:
 
