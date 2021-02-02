@@ -59,6 +59,7 @@
     behave -f html -o reports/report.html
 
 #### 2.- Ejecute los escenarios con allure reports:
+    . /usr/local/bin/venv/bin/activate && pip3 install -r requirements.txt && pip3 install allure-behave && pip3 install webdrivermanager
     behave -f allure_behave.formatter:AllureFormatter -o reports/allure/results ./features
     allure serve reports/allure/results
 

@@ -1,7 +1,7 @@
 from web_source.web_factory import get_web
 
 def before_scenario(context, test):
-    web = get_web(context.config.userdata['browser'])
+    web = get_web("chrome")
     context.web = web
 
 
